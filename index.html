@@ -4,57 +4,116 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>CV</title>
   </head>
   <body>
-    <div class="header">
-      <h1>CURRICULUM VITAE</h1>
-      <a href="edit.html">Edit Data</a>
-      <hr />
-      <div>
-        <img src="img/pp.png" alt="photo profile" width="150px" />
+    <header>
+      <h1 class="title">CURRICULUM <span>VITAE</span></h1>
+      <nav>
+        <ul>
+          <li><a href="#personal-data">DATA PRIBADI</a></li>
+          <li><a href="#education-data">DATA PENDIDIKAN</a></li>
+          <li><a href="#skill-data">DATA KEMAMPUAN</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div id="content">
+        <aside>
+          <img id="myImg" src="img/pp.png" alt="photo profile" width="200px" height="250px" />
+          <button onclick="changeImage()">Change Image</button>
+        </aside>
+        <article class="data" id="personal-data">
+          <h2>DATA PRIBADI</h2>
+          <div>
+            <span class="bold">Nama</span>
+            <span>: Alfirman Ejha Pahlepi</span>
+          </div>
+          <div>
+            <span class="bold">Tempat Tanggal Lahir</span>
+            <span>: Rantau Pauh, 11 Juni 1999</span>
+          </div>
+          <div>
+            <span class="bold">Jenis Kelamin</span>
+            <span>: Laki - Laki</span>
+          </div>
+          <div>
+            <span class="bold">Agama</span>
+            <span>: Islam</span>
+          </div>
+          <div>
+            <span class="bold">Tinggi Badan</span>
+            <span>: 166 cm</span>
+          </div>
+          <div>
+            <span class="bold">Berat Badan</span>
+            <span>: 54 cm</span>
+          </div>
+          <div>
+            <span class="bold">Alamat</span>
+            <span
+              >: Dusun Melati Desa Bukit Rata Kecamatan Kejuruanmuda Kabupaten
+              Aceh Tamiang</span
+            >
+          </div>
+          <div>
+            <span class="bold">Handphone</span>
+            <span>: 0896-7375-7429</span>
+          </div>
+          <div>
+            <span class="bold">Status</span>
+            <span>: Belum Menikah</span>
+          </div>
+          <div>
+            <span class="bold">Email</span>
+            <span>: alfirman.180170083 @mhs.unimal.ac.id</span>
+          </div>
+        </article>
+        <br />
+        <article class="data" id="education-data">
+          <h2>DATA PENDIDIKAN</h2>
+          <div>
+            <span class="bold">Sekolah Dasar</span>
+            <span>: SDN 1 SRIWIJAYA</span>
+          </div>
+          <div>
+            <span class="bold">SMP</span>
+            <span>: SMPN 1 KUALASIMPANG</span>
+          </div>
+          <div>
+            <span class="bold">SMA</span>
+            <span>: SMAN 2 KEJURUANMUDA</span>
+          </div>
+          <div>
+            <span class="bold">Perguruan Tinggi</span>
+            <span>: Universitas Malikussaleh</span>
+          </div>
+        </article>
+        <br />
+        <article class="data" id="skill-data">
+          <h2>DATA KEMAMPUAN</h2>
+          <div>
+            <span class="bold">Bahasa Pemograman</span>
+            <span>: Java, JavaScript</span>
+          </div>
+          <div>
+            <span class="bold">Front End</span>
+            <span>: Reactjs, React Nativet</span>
+          </div>
+          <div>
+            <span class="bold">Backend</span>
+            <span>: MYSQL, Firebase</span>
+          </div>
+          <div>
+            <span class="bold">Desain Web </span>
+            <span>: HTML, CSS, JavaScript, Bootstrap, TailwindCSS</span>
+          </div>
+        </article>
       </div>
-    </div>
-    <div class="content">
-      <div class="personal-data">
-        <h2>DATA PRIBADI</h2>
-        <hr width="200px" align="left" />
-        <p>Nama : <span>Alfirman Ejha Pahlepi</span></p>
-        <p>Tempat Tanggal Lahir : <span>Rantau Pauh, 11 Juni 1999</span></p>
-        <p>Jenis Kelamin : <span>Laki - Laki</span></p>
-        <p>Agama : <span>Islam</span></p>
-        <p>Tinggi Badan : <span>166 cm</span></p>
-        <p>Berat Badan : <span>54 cm</span></p>
-        <p>
-          Alamat :
-          <span
-            >Dusun Melati Desa Bukit Rata <br />Kecamatan Kejuruanmuda
-            <br />Kabupaten Aceh Tamiang</span
-          >
-        </p>
-        <p>Handphone : <span>0896-7375-7429</span></p>
-        <p>Status : <span>Belum Menikah</span></p>
-        <p>Email : <span>alfirman.180170083@mhs.unimal.ac.id</span></p>
-      </div>
-    </div>
-    <br>
-      <div class="education-data">
-        <h2>DATA PENDIDIKAN</h2>
-        <hr width="250px" align="left" />
-        <p>Sekolah Dasar : <span>SDN 1 SRIWIJAYA</span></p>
-        <p>SMP : <span>SMPN 1 KUALASIMPANG</span></p>
-        <p>SMA : <span>SMAN 2 KEJURUANMUDA</span></p>
-        <p>Perguruan Tinggi : <span>Universitas Malikussaleh</span></p>
-      </div>
-    <br>
-    <div class="skill-data">
-        <h2>DATA KEMAMPUAN</h2>
-        <hr width="250px" align="left" />
-        <p>Bahasa Pemograman : <span>Java, JavaScript, PHP</span></p>
-        <p>Front End : <span>Reactjs, React Native</span></p>
-        <p>Backend : <span>MYSQL, Firebase</span></p>
-        <p>Desain Web : <span>HTML, CSS, JavaScript, Bootstrap, TailwindCSS</span></p>
-    </div>
-    </div>
+    </main>
+    <footer>Developed by Alfirman Ejha Pahlepi</footer>
+
+    <script src="sript.js"></script>
   </body>
 </html>
